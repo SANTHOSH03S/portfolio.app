@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="about.css">
+<title>about</title>
+</head>
+<body>
+
+    <!--------------------navbar section------------>
+    <nav>
+      
+      <div class="nav-ul" id="nav-ul">
+        <ul id="ul">
+            <li><a href="#" onclick="skill()">Skills</a></li>
+            <li><a href="#" onclick="education()">Education</a></li>
+            <li><a href="#" onclick="project()">Project</a></li>
+            <li><a href="#"onclick="certification()">Certification</a></li>
+        </ul>
+      </div>
+
+      <div class="span">
+        <span class="show-list" id="show-list" onclick="show_list()" >&#9776</span>
+        <span class="close-list" id="close-list" onclick="close_list()">&#9746</span>
+      </div>
+    </nav>
+
+    <!--------------------skill section------------>
+   
+    <div class="skill" id="skill">
+         <div class="card" style="width: 18rem;">
+            <img src="about-img/html.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <center>
+              <h2>HTML</h2>
+            </center>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="about-img/css.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <center>
+              <h2>CSS</h2>
+            </center>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="about-img/javascript.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="about-img/bootstrap.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="about-img/problem.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>problem solving</h2>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="about-img/thinking.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>critical thinking</h2>
+            </div>
+          </div>
+         
+    </div>
+
+    <!--------------Education section--------------->
+
+    <div class="education" id="education">
+        <div class="card" style="width: 18rem;">
+            <img src="edu-img/ug.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">B.sc,Computer Science, Bishop Heber College (may 2024), Tiruchirapalli.</p>
+              <p>CGPA:7.71</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="edu-img/hsc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Infant Jesus Matriculation School (April 2021), Tiruchirapalli.</p>
+              <p>percentage:85%</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="edu-img/sslc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Little Flower Higher Secondary School (March 2019), Tiruchirapalli.</p>
+              <p>percentage:79%</p>
+            </div>
+          </div>
+         
+    </div>
+    <center>
+      <div class="edu-button" id="edu-button">
+        <button type="button" class="btn btn-primary" onclick="edu_button()">Back</button>
+      </div>
+    </center>
+    
+
+
+     <!--------------------project section ----------------->
+
+     <div class="project" id="project">
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+      </button>
+    </div>
+    <center>
+      <div class="project-button" id="project-button">
+        <button type="button" id="project-btn" class="btn btn-primary" onclick="project_button()">Back</button>
+      </div>
+    </center>
+    
+
+    <!----------------certification section-------------->
+
+    <div class="certification" id="certification">
+        <div class="card" style="width: 30rem;">
+            <img src="certificate-img/cert1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <center>
+              <h2>HTML and CSS Certification</h2>
+                </center>
+            </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+            <img src="certificate-img/cert2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+            <img src="certificate-img/cert3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <center>
+              <h2>Salesforce platform app builder</h2>
+                </center>
+            </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+            <img src="certificate-img/cert4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <center>
+              <h2>GUVI FSD 101</h2>
+                </center>
+            </div>
+        </div>
+      
+    </div>
+    <center>
+      <div class="certification-button" id="certification-button">
+        <button type="button" class="btn btn-primary" onclick="certification_button()">Back</button>
+      </div>
+    </center>
+    
+
+
+
+
+<script src="about.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
